@@ -1,0 +1,107 @@
+body {
+    display: grid;
+    place-items: center;
+    margin-top: 10vh;
+}
+
+.addevent {
+    display: none;
+}
+
+.calendarBtn {
+    background: #fff;
+    font-size: 15px;
+    border: 1px solid transparent;
+    padding: 11px 10px 11px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0.5px rgba(50,50,93,.17), 
+    0 2px 5px 0 rgba(50,50,93,.1), 
+    0 1px 1.5px 0 rgba(0,0,0,.07), 
+    0 1px 2px 0 rgba(0,0,0,.08), 
+    0 0 0 0 transparent!important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    -webkit-font-smoothing: antialiased!important;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    transition: all ease-in-out .3s;
+    margin: 0 0 10px;
+}
+
+.calendarBtn::before {
+    content: url(icons/icon-calendar-t1.svg);
+    display: inline-block;
+    width: 17px;
+    vertical-align: middle;
+    margin-right: 7.5px;
+}
+
+.calendarBtn:hover {
+    background-color :#f0f0f0;
+}
+
+.calendarLinks {
+    list-style: none;
+    display: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+    padding: 0;
+    font-size:15px;
+    text-decoration:none;
+    text-align:left;
+    border-radius:3px;
+    box-shadow:rgba(0,0,0,0.4) 0px 10px 26px;
+    transition:transform .15s ease;
+    -webkit-user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    margin: 10px 0;
+}
+
+.calendarLinks li {
+    overflow: hidden;
+}
+
+.calendarLinks li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    padding: 14px 14px 14px 14px;
+}
+
+.calendarLinks li a::before {
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 7.5px;
+}
+
+.calendarLinks li a:hover {
+    background-color: #f0f0f0;
+}
+
+.calendarLinks li a:focus {
+    outline: auto;
+}
+
+.calendarLinks li a small {
+    color: grey;
+}
+
+
+#google::before {
+    content: url(icons/icon-google-t5.svg);
+}
+#apple::before {
+    content: url(icons/icon-apple-t5.svg);
+}
+#outlook::before {
+    content: url(icons/icon-outlook-t5.svg);
+}
+#outlookCom::before {
+    content: url(icons/icon-outlookcom-t5.svg)
+}
+#yahoo::before {
+    content: url(icons/icon-yahoo-t5.svg);
+}
