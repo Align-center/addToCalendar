@@ -4,3 +4,5 @@ In a past contract I was asked to make a functional and adaptable add to calenda
 I also took advantage that the client was using JQuery in order to have an Event Listener that would work in any circumstance (since the button sare dynamically generated from the JavaScript) but it can easily be transform to vanilla JavaScript if you put the Event listener to a unmutable parent. 
 
 The process of generation and design is based on https://www.addevent.com/ add to calendar button. The idea was to only write simple html to generate all the links to the most used calendars. 
+
+I also Included a md files to explain how to create links and to use this snippet.
